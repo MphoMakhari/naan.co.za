@@ -70,6 +70,51 @@
           display: block;
           margin-top: 20px;
       }
+      /* Style the Sticky icons on web page */   
+.stickyicon-list {   
+position: fixed;   
+top: 200px;   
+transform: translateY(-50%);             
+}         
+.stickyicon-list a {   
+display: block;   
+text-align: center;   
+padding: 8px;   
+transition: all 0.5s ease;   
+color: white;   
+font-size: 20px;   
+}         
+/* HOver affect on sticky social media icons */   
+.stickyicon-list a:hover {   
+color: #000;   
+width:10px;   
+}   
+   
+/* Now we have to design each icon of social media */         
+.facebook {   
+background: #3b5998;   
+color: white;  
+}         
+.twitter {   
+color: white;   
+background: #00acee;   
+}   
+.linkedin {   
+background: #0e76a8;   
+color: white;   
+}         
+.google {   
+color: white;   
+background: #db4a39;   
+}   
+.instagram {   
+background: #3f729b;   
+color: white;   
+}         
+.youtube {   
+color: white;   
+background: #c4302b;    
+}   
   </style>
 </head>
 <body>
@@ -126,12 +171,38 @@
                     </a>
                      
                     <ul class="nav">
-                          <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="deals.html">Buy Clothes</a></li>
-                        <li><a href="sign.html">Sign-In and Register</a></li>
-                        <li><a href="cart.html">Go To Cart</a></li>
-                    </ul>   
+                      <li><a><div class="main">
+                       <!-- Another variation with a button -->
+                       <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Search Clothes">
+                          <div class="input-group-append">
+                             <button class="btn btn-secondary" type="button" style="background-color: #f26522; border-color:#f26522 ">
+                             <i class="fa fa-search"></i>
+                             </button>
+                          </div>
+                       </div>
+                    </div></a> </a></li>
+
+                     <li><a href="about.html">About</a></li>
+
+
+                     <li><a href="deals.html">Buy Clothes</a></li>
+
+                     <li><a href="sign.html">
+                       <i class="fa fa-user" aria-hidden="true"></i>
+                       <span class="padding_10">Login</span></a>
+                    </li>
+
+                     <li><a href="cart.html">
+                       <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                       <span class="padding_10">Cart</span></a>
+                    </li>
+
+
+                    
+
+                     
+                 </ul>  
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
