@@ -798,6 +798,8 @@ Banner Style
   border-color: #22b3c1;
   transition: 0.3s;
 }
+
+
 #section-1 .content-slider .slider #top-banner-1 {
   background: url('../images/banner-01.jpg') no-repeat center center;
   background-size: cover;
@@ -945,7 +947,7 @@ Visit Country Style
 
 .visit-country .item .right-content span {
   font-size: 15px;
-  color: #afafaf;
+  color: #311515;
   display: block;
 }
 
@@ -1088,7 +1090,7 @@ Footer Style
 */
 
 footer {
-  background-color: #dc1ea3;
+  background-color: #a60f79;
   text-align: center;
   padding: 25px 0px;
 }
