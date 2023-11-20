@@ -281,7 +281,7 @@ Pre-loader Style
   width: 16px;
   height: 16px;
   margin-left: 16px;
-  background: #22b3c1;
+  background: #aeb8b9;
   border-radius: 50%;
 }
 
@@ -294,7 +294,7 @@ Header Style
 */
 
 .background-header {
-  background-color: #22b3c1 !important;
+  background-color: #c21f89 !important;
   height: 70px!important;
   position: fixed!important;
   top: 0!important;
@@ -308,7 +308,7 @@ Header Style
 }
 
 .header-area {
-  background-color: #22b3c1;
+  background-color: #161714;
   position: absolute;
   height: 70px;
   top: 0;
@@ -340,7 +340,7 @@ Header Style
   transition: all 0.3s ease 0s;
 }
 
-.header-area .main-nav .logo img {
+.header-area .main-nav   img {
   width: 159px;
   margin-top: 15px;
 }
@@ -349,6 +349,16 @@ Header Style
   width: 159px;
 }
 
+.logo img {
+  width: 159px;
+  
+  max-height: 56.5px;
+  margin-top: 5px;
+
+  display: inline-block;
+  vertical-align: left;
+
+}
 .header-area .main-nav .nav {
   flex-basis: 70%;
   justify-content: flex-end;
@@ -585,7 +595,7 @@ Header Style
     width: 100%;
   }
   .header-area {
-    background-color: #22b3c1;
+    background-color: #186a75;
     padding: 0px 15px;
     height: 100px;
     box-shadow: none;
@@ -639,7 +649,7 @@ Header Style
   }
   .header-area .main-nav .nav li a:hover {
     background: #f7f7f7 !important;
-    color: #22b3c1!important;
+    color: #b8c6c7!important;
   }
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     position: relative;
@@ -727,14 +737,14 @@ Banner Style
   display: inline-block;
 }
 #section-1 .more-info i {
-  color: #22b3c1;
+  color: #bdcfd1;
   font-size: 24px;
   width: 60px;
   height: 60px;
   display: inline-block;
   text-align: center;
   line-height: 58px;
-  border: 1px solid #22b3c1;
+  border: 1px solid #d9e1e1;
   border-radius: 50%;
   float: left;
   margin-right: 20px;
@@ -742,7 +752,7 @@ Banner Style
 #section-1 .more-info h4 {
   text-align: left;
   font-size: 20px;
-  color: #22b3c1;
+  color: #dce8e9;
   font-weight: 700;
   line-height: 28px;
 }
@@ -756,8 +766,8 @@ Banner Style
   text-align: right;
 }
 #section-1 .main-button a:hover {
-  background-color: #22b3c1;
-  border-color: #22b3c1;
+  background-color: #e1a756;
+  border-color: #5222c1;
   color: #fff;
   opacity: 0.8;
 }
@@ -849,7 +859,7 @@ Banner Style
   width: inherit;
   height: inherit;
   margin-left: -100%;
-  background: #22b3c1;
+  background: #d7e9d7;
 }
 #section-1 .content-slider nav .controls label span.text {
   font-size: 20px;
@@ -946,8 +956,8 @@ Visit Country Style
 }
 
 .visit-country .item .right-content .main-button a:hover {
-  background-color: #22b3c1;
-  border-color: #22b3c1;
+  background-color: #576162;
+  border-color: #c3d0d1;
   color: #fff;
   opacity: 0.8;
 }
@@ -1001,7 +1011,7 @@ Visit Country Style
   height: 46px;
   border: 1px solid #22b3c1;
   line-height: 44px;
-  color: #22b3c1;
+  color: #c4cecf;
   text-align: center;
   font-size: 18px;
   font-weight: 500;
@@ -1010,12 +1020,12 @@ Visit Country Style
 }
 
 .visit-country ul.page-numbers li a:hover {
-  background-color: #22b3c1;
+  background-color: #ca8f1a;
   color: #fff;
 }
 
 .visit-country ul.page-numbers li.active a {
-  background-color: #22b3c1;
+  background-color: #23d23b;
   color: #fff;
 }
 
@@ -1078,7 +1088,7 @@ Footer Style
 */
 
 footer {
-  background-color: #22b3c1;
+  background-color: #dc1ea3;
   text-align: center;
   padding: 25px 0px;
 }
@@ -1176,7 +1186,7 @@ About Page Style
 }
 
 .about-main-content .content .main-button a {
-  background-color: #fff;
+  background-color: #e1a5a5;
   color: #22b3c1;
   border-color: #fff;
 }
@@ -1298,7 +1308,7 @@ About Page Style
   float: right;
   text-align: right;
   font-size: 20px;
-  color: #22b3c1;
+  color: #19a9b6;
 }
 
 .weekly-offers .item .thumb .text h4 span,
@@ -1493,14 +1503,8 @@ body #user-button .u-icons {
   opacity: 1 !important;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  /*&:before {
-     z-index:-1;
-     position:absolute;
-     top:0; right:0; bottom:0; left:0;
-     content:'';
+ 
 
-     backdrop-filter: blur(10px);
-  }*/
 }
 body #user-button .u-icons a {
   color: inherit;
