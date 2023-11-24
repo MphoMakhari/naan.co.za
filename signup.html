@@ -122,47 +122,44 @@
             
                
              
-            <form action="#">
-               <div class="field">
-                  <input type="username" required>
-                  <label for="">Username</label>
-               </div>
-
-               <div class="field">
-                  <input type="password" required>
-                  <label for="">Password</label>
-               </div>
-
-               <div class="field">
-                  <input type="Pin" required>
-                  <label for="">Pin</label>
-               </div>
-                
-                
-
-               <div class="content">
-                  <div class="checkbox">
-                     <input type="checkbox" id="remember-me">
-                     <label for="remember-me">Remember Me</label>
-                  </div>
-                  <div class="pass-link">
-                     <a href="sign.html">Forgot login details?</a>
-                  </div>
-               </div>
-               <div class="field">
-                  <input type="submit" value="Login">
-               </div>
-
-               <div class="signup-link">
-                Don’t have an account?<a href="index.html"> Register Now</a>
-               </div>
-                
-                   <button class="google-btn"><i class="fab fa-google"></i> Sign up with Google</button><br>
-        <button class="facebook-btn"><i class="fab fa-facebook-f"></i> Sign up with Facebook</button><br>
-        <button class="facebook-btn"><i class="fa fa-user"></i> Single Sign On (Work)</button><br>
-        <button class="facebook-btn"><i class="fa fa-phone"></i> Sign With OTP </button>
-                 
-            </form>
+            <form action="#" id="loginForm">
+              <div class="field">
+                 <input type="text" id="username" required>
+                 <label for="username">Username</label>
+              </div>
+     
+              <div class="field">
+                 <input type="password" id="password" required>
+                 <label for="password">Password</label>
+              </div>
+     
+              <div class="field">
+                 <input type="text" id="pin" required>
+                 <label for="pin">PIN</label>
+              </div>
+     
+              <div class="content">
+                 <div class="checkbox">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember Me</label>
+                 </div>
+                 <div class="pass-link">
+                    <a href="forgot.html">Forgot login details?</a>
+                 </div>
+              </div>
+              <div class="field">
+                 <input type="submit" value="Login" onclick="validateLogin()">
+              </div>
+     
+              <div class="signup-link">
+                 Don’t have an account? <a href="register.html">Register Now</a>
+              </div>
+     
+              <button class="google-btn"><i class="fab fa-google"></i> Sign in with Google</button><br>
+              <button class="facebook-btn"><i class="fab fa-facebook-f"></i> Sign in with Facebook</button><br>
+              <button class="facebook-btn"><i class="fa fa-user"></i> Single Sign On (Work)</button><br>
+              <button class="facebook-btn"><i class="fa fa-phone"></i> Sign With OTP </button>
+           </form>
             </form>
          </div>
          
@@ -171,7 +168,21 @@
     
     
     
-    
+  <script>
+    function validateLogin() {
+       var username = document.getElementById('username').value;
+       var password = document.getElementById('password').value;
+       var pin = document.getElementById('pin').value;
+
+       if (username.length > 4 && password.length > 4 && pin.length > 4) {
+          alert('Login successful!');
+          document.getElementById('loginForm').reset();
+          window.location.href = 'index.html';
+       } else {
+          alert('Invalid login details. Please check and try again.');
+       }
+    }
+ </script>
     
     
     

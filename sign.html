@@ -118,78 +118,96 @@
   </div>
 
    
-           <div class="wrapper">
-            
-               
-             
-            <form action="#">
-               <div class="field">
-                  <input type="text" required>
-                  <label for="">First Name</label>
-               </div>
+  <div class="wrapper">
+    <form action="#" id="registrationForm">
+       <div class="field">
+          <input type="text" id="firstname" required>
+          <label for="firstname">First Name</label>
+       </div>
 
-               <div class="field">
-                  <input type="text" required>
-                  <label for="">Last Name</label>
-               </div>
+       <div class="field">
+          <input type="text" id="lastname" required>
+          <label for="lastname">Last Name</label>
+       </div>
 
-               <div class="field">
-                  <input type="email" required>
-                  <label for="">Email Address</label>
-               </div>
-                
-                 <div class="field">
-                  <input type="text" required>
-                  <label for="">Home Address</label>
-                     
-               </div>
-                  <div class="field">
-                  <input type="number" required>
-                  <label for="">Cellphone Number</label>
-                     
-               </div>
+       <div class="field">
+          <input type="email" id="emailaddress" required>
+          <label for="emailaddress">Email Address</label>
+       </div>
 
-               <div class="field">
-                  <input type="password" required>
-                  <label for="">Password</label>
-               </div>
+       <div class="field">
+          <input type="text" id="homeaddress" required>
+          <label for="homeaddress">Home Address</label>
+       </div>
 
-               <div class="field">
-                  <input type="password" required>
-                  <label for="">Confirm Password</label>
-               </div>
+       <div class="field">
+          <input type="number" id="cellphone" required>
+          <label for="cellphone">Cellphone Number</label>
+       </div>
 
-               <div class="content">
-                  <div class="checkbox">
-                     <input type="checkbox" id="remember-me">
-                     <label for="remember-me">Remember Me</label>
-                  </div>
-                  <div class="pass-link">
-                     <a href="">Need Help?</a>
-                  </div>
-               </div>
-               <div class="field">
-                  <input type="submit" value="Sign Up">
-               </div>
+       <div class="field">
+          <input type="password" id="password" required>
+          <label for="password">Password</label>
+       </div>
 
-               <div class="signup-link">
-                  Already have a account?<a href="signup.html"> Login Now</a>
-               </div>
-                
-                   <button class="google-btn"><i class="fab fa-google"></i> Sign up with Google</button>
-        <button class="facebook-btn"><i class="fab fa-facebook-f"></i> Sign up with Facebook</button>
-                 
-            </form>
-            </form>
-         </div>
-         
+       <div class="field">
+          <input type="password" id="confirm" required>
+          <label for="confirm">Confirm Password</label>
+       </div>
+
+       <div class="content">
+          <div class="checkbox">
+             <input type="checkbox" id="remember-me">
+             <label for="remember-me">Remember Me</label>
+          </div>
+          <div class="pass-link">
+             <a href="">Need Help?</a>
+          </div>
+       </div>
+       <div class="field">
+          <input type="submit" value="Sign Up" onclick="validateRegistration()">
+       </div>
+
+       <div class="signup-link">
+          Already have an account? <a href="login.html">Login Now</a>
+       </div>
+
+       <button class="google-btn"><i class="fab fa-google"></i> Sign up with Google</button>
+       <button class="facebook-btn"><i class="fab fa-facebook-f"></i> Sign up with Facebook</button>
+    </form>
+ </div>
       </div>
   </div>
     
     
     
-    
-    
+  <script>
+    function validateRegistration() {
+       var firstName = document.getElementById('firstname').value;
+       var lastName = document.getElementById('lastname').value;
+       var email = document.getElementById('emailaddress').value;
+       var homeAddress = document.getElementById('homeaddress').value;
+       var cellphone = document.getElementById('cellphone').value;
+       var password = document.getElementById('password').value;
+       var confirmPassword = document.getElementById('confirm').value;
+
+       if (
+          firstName.length > 4 &&
+          lastName.length > 4 &&
+          email.length > 4 &&
+          homeAddress.length > 4 &&
+          cellphone.length > 4 &&
+          password.length > 4 &&
+          password === confirmPassword
+       ) {
+          alert('Registration successful!');
+          document.getElementById('registrationForm').reset();
+          window.location.href = 'signup.html';
+       } else {
+          alert('Invalid details. Please try again.');
+       }
+    }
+ </script>
     
     
     
